@@ -17,3 +17,6 @@ Manipulando los datos.
 *REPLACE se utiliza cuando quieres añadir o cambiar (o reemplazar) datos nuevos o ya existentes.
 *TRUNCATE se utiliza cuando quieres vaciar (o borrar) todos los datos de la plantilla.
 
+
+
+OCUPADO SISTEMA OP LINUX
