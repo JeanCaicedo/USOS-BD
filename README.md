@@ -10,6 +10,7 @@ Definiendo cómo es almacenada la información.
 *ALTER TABLE se utiliza para modificar una tabla ya existente.
 *DROP TABLE se utiliza para eliminar por completo una tabla existente.
 Manipulando los datos.
+
 *SELECT se utiliza cuando quieres leer (o seleccionar) tus datos.
 *INSERT se utiliza cuando quieres añadir (o insertar) nuevos datos.
 *UPDATE se utiliza cuando quieres cambiar (o actualizar) datos existentes.
@@ -17,6 +18,8 @@ Manipulando los datos.
 *REPLACE se utiliza cuando quieres añadir o cambiar (o reemplazar) datos nuevos o ya existentes.
 *TRUNCATE se utiliza cuando quieres vaciar (o borrar) todos los datos de la plantilla.
 
-
-
-OCUPADO SISTEMA OP LINUX
+*OPERADORES LOGICOS
+*OR, AND, NOT 
+*OR= (Se usa para combinar dos condiciones)
+*AND= (el resultado es verdadero si ambas expresiones son verdaderas) || OR (el resultado es verdadero si alguna expresión es verdadera)
+*NOT= (se usa para filtrar registros cuando se usa junto con las condiciones mencionadas en la cláusula WHERE)
