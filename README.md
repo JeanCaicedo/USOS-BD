@@ -31,3 +31,5 @@ Manipulando los datos.
 *NOT= (se usa para filtrar registros cuando se usa junto con las condiciones mencionadas en la cláusula WHERE)
 
 *CABE RECALCAR QUE LOS OPERADORES LOGICOS SE PUEDEN COMBINAR PARA REALIZAR ORDENES MAS ESPECIFICAS*
+
+Estudiar
