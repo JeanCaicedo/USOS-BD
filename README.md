@@ -34,3 +34,4 @@ Manipulando los datos.
 
 Estudiar
 or and not mas operadores logicos no dados
+para mañana 
