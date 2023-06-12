@@ -32,6 +32,6 @@ Manipulando los datos.
 
 *CABE RECALCAR QUE LOS OPERADORES LOGICOS SE PUEDEN COMBINAR PARA REALIZAR ORDENES MAS ESPECIFICAS*
 
-Estudiar
+Estudiar - Domingno
 or and not mas operadores logicos no dados
 para mañana 
