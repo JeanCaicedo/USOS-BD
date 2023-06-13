@@ -34,4 +34,4 @@ Manipulando los datos.
 
 Estudiar - Domingno
 or and not mas operadores logicos no dados
-para mañana 
+para mañana ssss
