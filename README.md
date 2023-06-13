@@ -35,3 +35,6 @@ Manipulando los datos.
 Estudiar - Domingno
 or and not mas operadores logicos no dados
 para mañana ssss
+
+*OPERADOR BETWEEN 
+se usa para comprar, ejemplo "BETWEEN 20 AND 30"= esto representa un valor entre 20 y 30 y de ahi sacar un resultado
