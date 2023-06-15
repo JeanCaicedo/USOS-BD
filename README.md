@@ -38,3 +38,6 @@ para mañana ssss
 
 *OPERADOR BETWEEN 
 se usa para comprar, ejemplo "BETWEEN 20 AND 30"= esto representa un valor entre 20 y 30 y de ahi sacar un resultado
+
+*OPERADOR LIKE
+operador que se usa para comparar y buscar datos un poco limitado con usos de carcter "comodin" dos  
