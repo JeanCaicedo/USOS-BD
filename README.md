@@ -42,4 +42,4 @@ se usa para comprar, ejemplo "BETWEEN 20 AND 30"= esto representa un valor entre
 *OPERADOR LIKE
 operador que se usa para comparar y buscar datos un poco limitado con usos de carcter "comodin" dos  
 
-REPASAR
+REPASAR-Esperando examen
