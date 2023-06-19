@@ -32,7 +32,6 @@ Manipulando los datos.
 
 *CABE RECALCAR QUE LOS OPERADORES LOGICOS SE PUEDEN COMBINAR PARA REALIZAR ORDENES MAS ESPECIFICAS*
 
-Estudiar - Domingno
 or and not mas operadores logicos no dados
 para mañana ssss
 
@@ -42,4 +41,4 @@ se usa para comprar, ejemplo "BETWEEN 20 AND 30"= esto representa un valor entre
 *OPERADOR LIKE
 operador que se usa para comparar y buscar datos un poco limitado con usos de carcter "comodin" dos  
 
-REPASAR-Esperando examen
+Estudiar - Domingno - Examen CV
