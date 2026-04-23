@@ -1,44 +1,97 @@
 # USOS-BD
 
-Aprendiendo a manipular base de datos gran escala. 
-By Dalto (actualizado):(https://www.youtube.com/watch?v=DFg1V-rO6Pg&t=6255s)
-Comandos SQL Básicos
-Definiendo cómo es almacenada la información.
-*CREATE DATABASE se utiliza para crear una nueva base de datos vacía.
-*DROP DATABASE se utiliza para eliminar completamente una base de datos existente.
-*CREATE TABLE se utiliza para crear una nueva tabla, donde la información se almacena realmente.
-*ALTER TABLE se utiliza para modificar una tabla ya existente.
-*DROP TABLE se utiliza para eliminar por completo una tabla existente.
-Manipulando los datos.
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
-*SELECT se utiliza cuando quieres leer (o seleccionar) tus datos.
-*INSERT se utiliza cuando quieres añadir (o insertar) nuevos datos.
-*UPDATE se utiliza cuando quieres cambiar (o actualizar) datos existentes.
-*DELETE se utiliza cuando quieres eliminar (o borrar) datos existentes.
-*REPLACE se utiliza cuando quieres añadir o cambiar (o reemplazar) datos nuevos o ya existentes.
-*TRUNCATE se utiliza cuando quieres vaciar (o borrar) todos los datos de la plantilla.
-*SET se puede utilizar para establecer cambios 
-*LIMIT se utiliza cuando quieres marcar un limite de resultados a la hora de realizar una orden.
+Apuntes y prácticas de SQL estudiando la base de datos **Northwind** con SQLiteStudio. El repo funciona como una chuleta personal de los comandos y cláusulas aprendidos siguiendo el curso de Dalto en YouTube.
 
-*CLAUSULA WHERE se usa para restringir el número de filas afectadas por una consulta SELECT, UPDATE o DELETE. La cláusula WHERE se puede usar junto con operadores lógicos como AND y OR, operadores de comparación como, = etc. Cuando se usa con el operador lógico AND, se deben cumplir todos los criterios.
-*CLAUSULA DISTINCT VS NOT (!=)
-![image](https://github.com/JeanCaicedo/USOS-BD/assets/109972151/4c6ce4ca-9560-4737-b27f-9fb5b514086b)
+Es un repositorio de **notas de aprendizaje**, no un proyecto ejecutable. El valor está en el material pedagógico.
 
-*OPERADORES LOGICOS
-*OR, AND, NOT 
-*OR= (Se usa para combinar dos condiciones)
-*AND= (el resultado es verdadero si ambas expresiones son verdaderas) || OR (el resultado es verdadero si alguna expresión es verdadera)
-*NOT= (se usa para filtrar registros cuando se usa junto con las condiciones mencionadas en la cláusula WHERE)
+## Recursos
 
-*CABE RECALCAR QUE LOS OPERADORES LOGICOS SE PUEDEN COMBINAR PARA REALIZAR ORDENES MAS ESPECIFICAS*
+- Curso base: [Dalto — Curso de SQL](https://www.youtube.com/watch?v=DFg1V-rO6Pg)
+- Base de datos: Northwind (incluida como proyecto `.sqbpro` para SQLiteStudio)
 
-or and not mas operadores logicos no dados
-para mañana ssss
+## Cómo abrirlo
 
-*OPERADOR BETWEEN 
-se usa para comprar, ejemplo "BETWEEN 20 AND 30"= esto representa un valor entre 20 y 30 y de ahi sacar un resultado
+1. Instalar [SQLiteStudio](https://sqlitestudio.pl/).
+2. Abrir el archivo `Northwind.sqbpro`.
+3. Ejecutar las consultas de ejemplo sobre las tablas de Northwind.
 
-*OPERADOR LIKE
-operador que se usa para comparar y buscar datos un poco limitado con usos de carcter "comodin" dos  
+---
 
-estudiar calculo 
+## Apuntes de SQL
+
+### Comandos DDL (definir la estructura)
+
+Definiendo cómo se almacena la información.
+
+```sql
+CREATE DATABASE nombre_bd;   -- crea una nueva base de datos vacía
+DROP DATABASE nombre_bd;     -- elimina completamente una base de datos
+CREATE TABLE nombre_tabla;   -- crea una tabla donde se almacena la información
+ALTER TABLE nombre_tabla;    -- modifica una tabla existente
+DROP TABLE nombre_tabla;     -- elimina por completo una tabla existente
+```
+
+### Comandos DML (manipular los datos)
+
+```sql
+SELECT   -- leer o seleccionar datos
+INSERT   -- añadir nuevos datos
+UPDATE   -- cambiar datos existentes
+DELETE   -- eliminar datos existentes
+REPLACE  -- añadir o cambiar datos nuevos o existentes
+TRUNCATE -- vaciar todos los datos de una tabla
+SET      -- establecer cambios
+LIMIT    -- limitar el número de resultados
+```
+
+### Cláusula WHERE
+
+Restringe el número de filas afectadas por una consulta `SELECT`, `UPDATE` o `DELETE`. Se puede combinar con operadores lógicos (`AND`, `OR`) y operadores de comparación (`=`, `!=`, `<`, `>`, etc.).
+
+```sql
+SELECT * FROM Customers
+WHERE Country = 'Germany' AND City = 'Berlin';
+```
+
+### DISTINCT vs NOT (!=)
+
+- `DISTINCT`: devuelve valores únicos, sin duplicados.
+- `!=` / `NOT`: excluye los registros que cumplen una condición.
+
+### Operadores lógicos
+
+```sql
+-- OR: el resultado es verdadero si alguna expresión es verdadera
+SELECT * FROM Products WHERE CategoryID = 1 OR CategoryID = 2;
+
+-- AND: el resultado es verdadero si ambas expresiones son verdaderas
+SELECT * FROM Orders WHERE CustomerID = 'ALFKI' AND ShipCountry = 'Germany';
+
+-- NOT: filtra registros negando una condición
+SELECT * FROM Employees WHERE NOT Country = 'USA';
+```
+
+Los operadores lógicos se pueden combinar para construir consultas más específicas.
+
+### Operador BETWEEN
+
+Se usa para comparar dentro de un rango.
+
+```sql
+SELECT * FROM Products
+WHERE Price BETWEEN 20 AND 30;
+```
+
+---
+
+## Notas
+
+- Material de estudio, con el nivel de detalle de quien está aprendiendo.
+- Se conservan los apuntes originales como referencia personal.
+
+## Autor
+
+Jean Caicedo — [@JeanCaicedo](https://github.com/JeanCaicedo)
