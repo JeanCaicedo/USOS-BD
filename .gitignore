@@ -1,0 +1,16 @@
+# Archivos temporales de SQLite
+*.db-journal
+*.db-shm
+*.db-wal
+
+# SQLiteStudio / SqBpro temporales
+*~
+*.bak
+
+# Editores
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
